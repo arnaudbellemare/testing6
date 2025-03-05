@@ -361,7 +361,7 @@ def index():
         yvals = df_merged["vwap_transformed"].iloc[i:i+2]
         vwap_color = "blue" if df_merged["ScaledPrice"].iloc[i] > df_merged["vwap_transformed"].iloc[i] else "red"
         ax.plot(xvals, yvals, color=vwap_color, linewidth=1)
-    # Add watermark: ticker (small) and "CNO" below it
+    # Add watermark: ticker (smaller) and "CNO" below it
     ax.text(0.5, 0.55, ticker_main, transform=ax.transAxes, fontsize=16, color="lightgray",
             alpha=0.3, ha="center", va="center", zorder=0)
     ax.text(0.5, 0.45, "CNO", transform=ax.transAxes, fontsize=12, color="lightgray",
