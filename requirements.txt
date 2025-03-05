@@ -1,0 +1,10 @@
+ccxt
+pandas
+numpy
+matplotlib
+scipy
+numba
+PyWavelets
+scikit-learn
+Flask
+gunicorn
